@@ -2,10 +2,10 @@
 {% block content %}
 {% load crispy_forms_tags %}
 <div class="container">
-    <form method='post' style="width: 50%; height:500px; margin: auto;" class="pt-5" enctype="multipart/form-data">
-        <h1>forms.py</h1>
+    <form method='post' style="width: 50%; height:500px; margin: auto;" class="pt-5">
+        <h1>models.py</h1>
         {% csrf_token %}
-        {{ form|crispy }}
+        {{ form | crispy }}
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 </div>
